@@ -72,8 +72,22 @@
     }
   }
 
-
-
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.title-video {
+  margin-bottom: 32px;
+}
 </style>
  <div class="home-hero">
 </div>
@@ -155,7 +169,7 @@
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-4">
-          <h3 class="listing-description__title title">Descripción de la vivienda</h3>
+          <h3 class="listing-description__title title">Descripción de la Vivienda</h3>
         </div>
         <div class="w-col w-col-8">
           <p class="text">Piso en exclusiva urbanización aquamarina a pocos metros del mar de Dénia y del puerto. Dispone de 3 habitaciones, un gran salón comedor, una buena cocina con cuarto de lavadora ventilado y una magnifica terraza con agradables vistas. Además dispone de un garaje muy amplio (más de 16 metros) y un gran trastero (de más de 6 metros) incluidos en el precio. Zona ajardinada, pista de pádel, piscina, gran zona infantil y un conserje durante todo el año. Por las noches en los meses de verano vigilante de seguridad. Somos directamente la propiedad, por lo que no hay intermediarios. Es un apartamento muy cómodo tanto para veranear como para residir. Económicos gastos de comunidad. Las fotografías son reales y se puede visitar sin ningún compromiso. Zona Javea, benichatel, morara, calpe, valencia, alicante y costa blanca</p>
@@ -185,7 +199,7 @@
       </div>
     </div>
   </div>
-    <div class="ammenities" id="gallery">
+  <div class="ammenities" id="gallery">
     <div class="container-no-columns w-container">
       <h3 class="ammenities__title title">Galeria</h3>
       <div class="w-row">
@@ -214,6 +228,17 @@
     </div>
   </div>
   <div>
+    <div class="ammenities" id="video">
+    <div class="container-no-columns w-container">
+      <h3 class="ammenities__title title title-video">Tour por el Apartamento</h3>
+      <div class="w-row">
+        <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Qd599kFnuHQ?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div> 
+      </div>
+      </div>
+    </div>
+  </div>
     <div class="form-section w-container" id="form">
       <div class="form-container">
         <h3 class="form__title title">Preguntanos más información sobre el apartamento</h3>
